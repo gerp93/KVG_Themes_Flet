@@ -20,25 +20,35 @@ def test_theme_list():
     """Test getting the theme list."""
     print("\nTesting theme list...")
     themes = get_theme_list()
-    assert len(themes) == 9, f"Expected 9 themes, got {len(themes)}"
+    assert len(themes) == 16, f"Expected 16 themes (9 standard + 7 ULTRA), got {len(themes)}"
     
     expected_themes = {
         'light', 'dark', 'neon', 'retrowave', 'hacker', 
-        'lava', 'electric_lime', 'bubblegum', 'commander_keen'
+        'lava', 'electric_lime', 'bubblegum', 'commander_keen',
+        'neon_ultra', 'retrowave_ultra', 'hacker_ultra',
+        'lava_ultra', 'electric_lime_ultra', 'bubblegum_ultra', 'commander_keen_ultra'
     }
     
     found_themes = {theme_id for theme_id, _ in themes}
     assert found_themes == expected_themes, f"Theme mismatch: {found_themes} vs {expected_themes}"
-    print(f"✓ Found all {len(themes)} expected themes")
+    print(f"✓ Found all {len(themes)} expected themes (9 standard + 7 ULTRA)")
 
 
 def test_get_theme():
     """Test getting individual themes."""
     print("\nTesting individual theme retrieval...")
     
-    # Test valid themes
-    for theme_id in ['light', 'dark', 'neon', 'retrowave', 'hacker', 
-                     'lava', 'electric_lime', 'bubblegum', 'commander_keen']:
+    # Test valid themes - standard themes
+    standard_themes = ['light', 'dark', 'neon', 'retrowave', 'hacker', 
+                       'lava', 'electric_lime', 'bubblegum', 'commander_keen']
+    
+    # Test valid themes - ULTRA themes
+    ultra_themes = ['neon_ultra', 'retrowave_ultra', 'hacker_ultra',
+                    'lava_ultra', 'electric_lime_ultra', 'bubblegum_ultra', 'commander_keen_ultra']
+    
+    all_test_themes = standard_themes + ultra_themes
+    
+    for theme_id in all_test_themes:
         theme = get_theme(theme_id)
         assert theme is not None, f"Failed to get theme: {theme_id}"
         assert isinstance(theme, ft.Theme), f"Theme {theme_id} is not a ft.Theme instance"
@@ -66,7 +76,7 @@ def test_all_themes():
     print("\nTesting get_all_themes...")
     
     all_themes = get_all_themes()
-    assert len(all_themes) == 9
+    assert len(all_themes) == 16, f"Expected 16 themes, got {len(all_themes)}"
     
     # Check structure
     for theme_id, info in all_themes.items():
