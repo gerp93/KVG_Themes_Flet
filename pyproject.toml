@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flet-kvg-themes"
+version = "1.0.0"
+description = "KVG Themes for Flet - A vibrant collection of pre-built themes ported from TKinter"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "KVGroove", email = ""},
+]
+keywords = ["flet", "themes", "ui", "material3", "design", "colors"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: User Interfaces",
+]
+dependencies = [
+    "flet>=0.20.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/gerp93/KVG_Themes_Flet"
+Documentation = "https://github.com/gerp93/KVG_Themes_Flet#readme"
+Repository = "https://github.com/gerp93/KVG_Themes_Flet"
+"Bug Tracker" = "https://github.com/gerp93/KVG_Themes_Flet/issues"
+
+[tool.setuptools.packages.find]
+include = ["flet_kvg_themes*"]
+
+[tool.setuptools.package-data]
+flet_kvg_themes = ["py.typed"]
