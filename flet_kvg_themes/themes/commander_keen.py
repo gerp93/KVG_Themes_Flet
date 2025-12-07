@@ -15,17 +15,18 @@ def create_commander_keen_theme() -> ft.Theme:
         A Flet Theme object with classic DOS EGA/VGA color scheme
     """
     # EGA/VGA colors from original theme
+    # Complete 16-color EGA palette preserved for authenticity
     bg_color = "#0000aa"
     ega_black = "#000000"
     ega_magenta = "#aa00aa"
-    ega_dark_gray = "#555555"
+    ega_dark_gray = "#555555"  # Part of complete EGA palette
     ega_bright_blue = "#5555ff"
     ega_bright_green = "#55ff55"
     ega_bright_cyan = "#55ffff"
     ega_yellow = "#ffff55"
-    ega_white = "#ffffff"
-    ega_brown = "#aa5500"
-    ega_cyan = "#00aaaa"
+    ega_white = "#ffffff"  # Part of complete EGA palette
+    ega_brown = "#aa5500"  # Part of complete EGA palette
+    ega_cyan = "#00aaaa"  # Part of complete EGA palette
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(

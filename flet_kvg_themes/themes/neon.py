@@ -15,13 +15,15 @@ def create_neon_theme() -> ft.Theme:
         A Flet Theme object with neon color scheme
     """
     # Neon colors from original theme
+    # All colors from original palette are preserved for consistency
+    # and potential future use or customization
     bg_color = "#0a0a0a"
     neon_pink = "#ff00ff"
     neon_cyan = "#00ffff"
     neon_green = "#39ff14"
-    neon_yellow = "#ffff00"
+    neon_yellow = "#ffff00"  # Reserved for future use
     neon_orange = "#ff6600"
-    hot_pink = "#ff1493"
+    hot_pink = "#ff1493"  # Reserved for future use
     electric_blue = "#7df9ff"
     
     return ft.Theme(

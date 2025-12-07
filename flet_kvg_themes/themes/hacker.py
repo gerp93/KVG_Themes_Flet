@@ -15,9 +15,10 @@ def create_hacker_theme() -> ft.Theme:
         A Flet Theme object with hacker/matrix color scheme
     """
     # Hacker/Matrix colors from original theme
+    # All colors from original palette are preserved for consistency
     bg_color = "#0d0d0d"
     matrix_green = "#00ff00"
-    lime = "#32cd32"
+    lime = "#32cd32"  # Reserved for future use
     phosphor = "#00ff41"
     amber = "#ffbf00"
     terminal_green = "#20c20e"

@@ -15,13 +15,14 @@ def create_lava_theme() -> ft.Theme:
         A Flet Theme object with lava/fire color scheme
     """
     # Lava colors from original theme
+    # All colors from original palette are preserved for consistency
     bg_color = "#cc0000"
     molten_orange = "#ff6600"
     fire_yellow = "#ffcc00"
     white_hot = "#ffffff"
     dark_ember = "#330000"
     charcoal = "#1a0000"
-    bright_flame = "#ff3300"
+    bright_flame = "#ff3300"  # Reserved for future use
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(

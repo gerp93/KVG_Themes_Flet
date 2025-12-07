@@ -15,13 +15,14 @@ def create_bubblegum_theme() -> ft.Theme:
         A Flet Theme object with bubblegum color scheme
     """
     # Bubblegum colors from original theme
+    # All colors from original palette are preserved for consistency
     bg_color = "#ff69b4"
     white = "#ffffff"
     deep_magenta = "#cc0066"
     baby_blue = "#87ceeb"
     candy_purple = "#9932cc"
     sunshine = "#ffff00"
-    cotton_candy = "#ffb6c1"
+    cotton_candy = "#ffb6c1"  # Reserved for future use
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(

@@ -55,9 +55,9 @@ def test_theme_exists():
     """Test the theme_exists function."""
     print("\nTesting theme_exists...")
     
-    assert theme_exists('neon') == True
-    assert theme_exists('dark') == True
-    assert theme_exists('invalid') == False
+    assert theme_exists('neon')
+    assert theme_exists('dark')
+    assert not theme_exists('invalid')
     print("✓ theme_exists works correctly")
 
 

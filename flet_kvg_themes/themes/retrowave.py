@@ -15,12 +15,13 @@ def create_retrowave_theme() -> ft.Theme:
         A Flet Theme object with retrowave color scheme
     """
     # Retrowave colors from original theme
+    # All colors from original palette are preserved for consistency
     bg_color = "#1a0a2e"
     sunset_pink = "#ff6b9d"
     sunset_orange = "#ff9a56"
-    sunset_yellow = "#ffd93d"
+    sunset_yellow = "#ffd93d"  # Reserved for future use
     synth_purple = "#c77dff"
-    hot_magenta = "#e040fb"
+    hot_magenta = "#e040fb"  # Reserved for future use
     chrome = "#e0e0e0"
     
     return ft.Theme(

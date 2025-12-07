@@ -15,13 +15,14 @@ def create_electric_lime_theme() -> ft.Theme:
         A Flet Theme object with electric lime color scheme
     """
     # Electric Lime colors from original theme
+    # All colors from original palette are preserved for consistency
     bg_color = "#ccff00"
     hot_black = "#0a0a0a"
     deep_purple = "#4a0080"
     electric_blue = "#0066ff"
     magenta_pop = "#ff00aa"
     dark_lime = "#88aa00"
-    ultra_violet = "#7700ff"
+    ultra_violet = "#7700ff"  # Reserved for future use
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(
