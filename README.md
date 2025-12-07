@@ -4,7 +4,9 @@ A vibrant collection of pre-built themes for Flet applications, ported from the 
 
 ## 🎨 Features
 
-- **9 Pre-built Themes**: Light, Dark, Neon, Retrowave, Hacker, Lava, Electric Lime, Bubblegum, Commander Keen
+- **16 Pre-built Themes**: 9 standard themes + 7 ULTRA intense variants
+- **ULTRA Themes**: Extremely visually intense versions inspired by the original TKinter library's bold color choices
+- **Font Customization**: ULTRA themes include custom fonts matching the original TKinter themes where possible
 - **Zero Dependencies**: Works with any Flet application
 - **Plug & Play**: Minimal setup required - just one line to apply a theme
 - **Material 3 Design**: Leverages Flet's Material 3 theming system
@@ -49,6 +51,8 @@ ft.app(target=main)
 
 ## 🌈 Available Themes
 
+### Standard Themes
+
 | Theme ID | Name | Description |
 |----------|------|-------------|
 | `light` | ☀️ Light Theme | Default clean look |
@@ -60,6 +64,20 @@ ft.app(target=main)
 | `electric_lime` | ⚡ Electric Lime | Blindingly bright green-yellow |
 | `bubblegum` | 🍬 Bubblegum | Hot pink explosion |
 | `commander_keen` | 🚀 Commander Keen | Classic DOS EGA/VGA palette |
+
+### 💥 ULTRA Themes (Extremely Intense)
+
+These themes are designed to be visually assaulting with maximum saturation and intensity, inspired by the bold colors of the original TKinter library. They feature custom fonts matching the originals where possible.
+
+| Theme ID | Name | Description | Font |
+|----------|------|-------------|------|
+| `neon_ultra` | 🌈💥 NEON ULTRA | Extremely intense neon colors | Consolas |
+| `retrowave_ultra` | 🌅💥 Retrowave ULTRA | Extremely intense 80s synthwave | Default |
+| `hacker_ultra` | 💻💥 Hacker ULTRA | Extremely intense Matrix green | Consolas |
+| `lava_ultra` | 🌋💥 LAVA ULTRA | Extremely intense fiery red | Impact |
+| `electric_lime_ultra` | ⚡💥 Electric Lime ULTRA | Extremely intense lime | Trebuchet MS |
+| `bubblegum_ultra` | 🍬💥 Bubblegum ULTRA | Extremely intense hot pink | Default |
+| `commander_keen_ultra` | 🚀💥 Commander Keen ULTRA | Extremely intense DOS palette | Default |
 
 ## 📖 Usage Examples
 
@@ -187,7 +205,9 @@ if theme_exists("custom_theme"):
 
 ## 🎨 Theme Color Schemes
 
-Each theme carefully adapts the original TKinter color palettes to work with Flet's Material 3 design system. Here's a preview of the color philosophy:
+### Standard Themes
+
+Each theme carefully adapts the original TKinter color palettes to work with Flet's Material 3 design system:
 
 - **Light**: Clean, professional grays and blues
 - **Dark**: Comfortable dark grays with good contrast
@@ -198,6 +218,18 @@ Each theme carefully adapts the original TKinter color palettes to work with Fle
 - **Electric Lime**: Bright yellow-green with deep purple accents
 - **Bubblegum**: Hot pink with candy purples and baby blues
 - **Commander Keen**: Classic DOS EGA/VGA 16-color palette
+
+### 💥 ULTRA Themes
+
+The ULTRA variants take the original themes to the extreme with maximum saturation and intensity. These themes use the brightest possible colors as backgrounds and surfaces, creating a visually assaulting experience similar to the original TKinter library:
+
+- **Neon ULTRA**: Pure magenta and cyan backgrounds with neon yellow accents - extremely intense (Consolas font)
+- **Retrowave ULTRA**: Pure magenta and hot pink backgrounds with bright yellows - visually explosive
+- **Hacker ULTRA**: Phosphor green and lime backgrounds on pure black - maximum contrast (Consolas font)
+- **Lava ULTRA**: Pure red backgrounds with fire yellow accents - extremely hot (Impact font)
+- **Electric Lime ULTRA**: Bright lime yellow backgrounds with deep purple and magenta - blindingly bright (Trebuchet MS font)
+- **Bubblegum ULTRA**: Deep pink and hot pink backgrounds with pure white and magenta - candy overload
+- **Commander Keen ULTRA**: Pure blue backgrounds with full EGA palette colors - authentic DOS intensity
 
 ## 🏃 Running the Example
 
