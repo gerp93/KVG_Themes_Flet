@@ -15,14 +15,11 @@ def create_retrowave_ultra_theme() -> ft.Theme:
         A Flet Theme object with extreme retrowave color scheme
     """
     # Retrowave colors - using brightest, most saturated versions
-    bg_color = "#ff1493"  # Hot pink background - extremely intense
-    sunset_pink = "#ff69b4"  # Bright pink
-    sunset_orange = "#ff4500"  # Red-orange, more intense
-    sunset_yellow = "#ffd700"  # Gold yellow
-    synth_purple = "#da00ff"  # More saturated purple
     hot_magenta = "#ff00ff"  # Pure magenta
-    chrome = "#ffffff"  # Pure white
-    neon_blue = "#00ffff"  # Cyan
+    synth_purple = "#da00ff"  # More saturated purple
+    sunset_yellow = "#ffd700"  # Gold yellow
+    sunset_orange = "#ff4500"  # Red-orange, more intense
+    bg_color = "#ff1493"  # Hot pink background - extremely intense
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(
@@ -32,16 +29,16 @@ def create_retrowave_ultra_theme() -> ft.Theme:
             on_primary_container=sunset_yellow,  # Yellow on purple
             secondary=sunset_orange,  # Bright orange
             on_secondary="#000000",
-            secondary_container=sunset_pink,  # Pink containers
+            secondary_container=bg_color,  # Pink containers
             on_secondary_container="#000000",
-            tertiary=neon_blue,  # Cyan tertiary
+            tertiary="#00ffff",  # Cyan tertiary
             on_tertiary="#000000",
             surface=bg_color,  # Hot pink surfaces - very intense
-            on_surface=chrome,
+            on_surface="#ffffff",
             surface_variant=synth_purple,  # Purple variant
             on_surface_variant=sunset_yellow,
             background=hot_magenta,  # Pure magenta background - visually assaulting
-            on_background=chrome,
+            on_background="#ffffff",
             error=sunset_orange,
             on_error="#000000",
             outline=sunset_yellow,  # Yellow outlines

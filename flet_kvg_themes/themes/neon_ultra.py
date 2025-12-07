@@ -15,15 +15,12 @@ def create_neon_ultra_theme() -> ft.Theme:
         A Flet Theme object with extreme neon color scheme
     """
     # Neon colors from original theme - using brightest possible combinations
-    bg_color = "#000000"  # Pure black for maximum contrast
     neon_pink = "#ff00ff"  # Full saturation magenta
     neon_cyan = "#00ffff"  # Full saturation cyan
     neon_green = "#39ff14"  # Brightest neon green
     neon_yellow = "#ffff00"  # Pure yellow
     neon_orange = "#ff6600"
-    hot_pink = "#ff1493"
-    electric_blue = "#00ffff"  # Using cyan for maximum brightness
-    ultra_violet = "#ff00ff"  # Using magenta
+    ultra_violet = "#ff00ff"  # Using magenta for background
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(

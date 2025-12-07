@@ -15,14 +15,12 @@ def create_electric_lime_ultra_theme() -> ft.Theme:
         A Flet Theme object with extreme electric lime color scheme
     """
     # Electric Lime colors - using brightest possible yellow-green
-    bg_color = "#ccff00"  # Electric lime background - extremely bright
+    bright_lime = "#ccff00"  # Electric lime background - extremely bright
     ultra_lime = "#ffff00"  # Pure yellow
-    hot_black = "#000000"  # Pure black
     deep_purple = "#4a0080"  # Deep purple
-    electric_blue = "#0066ff"  # Electric blue
-    magenta_pop = "#ff00aa"  # Magenta
     ultra_violet = "#9900ff"  # Ultra violet
-    bright_lime = "#ccff00"  # Bright lime
+    magenta_pop = "#ff00aa"  # Magenta
+    electric_blue = "#0066ff"  # Electric blue
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(
@@ -37,11 +35,11 @@ def create_electric_lime_ultra_theme() -> ft.Theme:
             tertiary=magenta_pop,  # Magenta tertiary
             on_tertiary=ultra_lime,
             surface=bright_lime,  # Bright lime surfaces - extremely intense
-            on_surface=hot_black,
+            on_surface="#000000",
             surface_variant=ultra_lime,  # Pure yellow variant
             on_surface_variant=deep_purple,
-            background=bg_color,  # Electric lime background - visually assaulting
-            on_background=hot_black,
+            background=bright_lime,  # Electric lime background - visually assaulting
+            on_background="#000000",
             error=magenta_pop,
             on_error=ultra_lime,
             outline=deep_purple,  # Purple outlines

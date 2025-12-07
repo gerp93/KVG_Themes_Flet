@@ -15,12 +15,10 @@ def create_hacker_ultra_theme() -> ft.Theme:
         A Flet Theme object with extreme hacker/matrix color scheme
     """
     # Hacker/Matrix colors - using brightest possible greens
-    bg_color = "#000000"  # Pure black for maximum contrast
     matrix_green = "#00ff00"  # Pure green - maximum intensity
     lime = "#39ff14"  # Neon lime green
     phosphor = "#00ff41"  # Phosphor green
     amber = "#ffbf00"  # Warning amber
-    terminal_green = "#00ff00"  # Pure green
     bright_lime = "#ccff00"  # Yellow-green
     
     return ft.Theme(

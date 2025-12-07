@@ -15,14 +15,13 @@ def create_lava_ultra_theme() -> ft.Theme:
         A Flet Theme object with extreme lava/fire color scheme
     """
     # Lava colors - using brightest, most saturated fire colors
-    bg_color = "#ff0000"  # Pure red background - extremely intense
+    bright_red = "#ff0000"  # Pure red
     molten_orange = "#ff6600"  # Molten orange
     fire_yellow = "#ffcc00"  # Fire yellow
     white_hot = "#ffffff"  # Pure white
-    bright_red = "#ff0000"  # Pure red
     bright_flame = "#ff3300"  # Bright flame
-    lava_red = "#cc0000"  # Deep red
     extreme_orange = "#ff4500"  # Red-orange
+    lava_red = "#cc0000"  # Deep red
     
     return ft.Theme(
         color_scheme=ft.ColorScheme(
@@ -40,7 +39,7 @@ def create_lava_ultra_theme() -> ft.Theme:
             on_surface=white_hot,
             surface_variant=bright_flame,  # Flame variant
             on_surface_variant=fire_yellow,
-            background=bg_color,  # Pure red background - visually assaulting
+            background=bright_red,  # Pure red background - visually assaulting
             on_background=white_hot,
             error=extreme_orange,
             on_error=white_hot,
