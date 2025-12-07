@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "MIT"}
 authors = [
-    {name = "KVGroove", email = ""},
+    {name = "KVGroove"},
 ]
 keywords = ["flet", "themes", "ui", "material3", "design", "colors"]
 classifiers = [
