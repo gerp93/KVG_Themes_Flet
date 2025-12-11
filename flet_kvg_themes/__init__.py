@@ -2,7 +2,8 @@
 flet_kvg_themes - KVG Themes for Flet Applications
 
 A collection of vibrant, pre-built themes for Flet applications, ported from
-the tkthemes library. Includes 9 unique themes with distinctive color palettes.
+the tkthemes library. Includes 9 unique themes with distinctive color palettes,
+plus 7 ULTRA variants with extremely intense, visually assaulting colors.
 
 Usage:
     import flet as ft
@@ -28,6 +29,15 @@ Available themes:
     - electric_lime: ⚡ Electric Lime - Blindingly bright green-yellow
     - bubblegum: 🍬 Bubblegum - Hot pink explosion
     - commander_keen: 🚀 Commander Keen - Classic DOS EGA/VGA palette
+
+ULTRA themes (extremely intense versions):
+    - neon_ultra: 🌈💥 NEON ULTRA - Extremely intense neon colors
+    - retrowave_ultra: 🌅💥 Retrowave ULTRA - Extremely intense 80s synthwave
+    - hacker_ultra: 💻💥 Hacker ULTRA - Extremely intense Matrix green
+    - lava_ultra: 🌋💥 LAVA ULTRA - Extremely intense fiery red
+    - electric_lime_ultra: ⚡💥 Electric Lime ULTRA - Extremely intense lime
+    - bubblegum_ultra: 🍬💥 Bubblegum ULTRA - Extremely intense hot pink
+    - commander_keen_ultra: 🚀💥 Commander Keen ULTRA - Extremely intense DOS palette
 """
 
 __version__ = "1.0.0"

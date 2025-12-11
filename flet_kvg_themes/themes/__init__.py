@@ -15,6 +15,15 @@ from . import electric_lime  # noqa: F401
 from . import bubblegum  # noqa: F401
 from . import commander_keen  # noqa: F401
 
+# Import ULTRA themes - extremely intense versions
+from . import neon_ultra  # noqa: F401
+from . import retrowave_ultra  # noqa: F401
+from . import hacker_ultra  # noqa: F401
+from . import lava_ultra  # noqa: F401
+from . import electric_lime_ultra  # noqa: F401
+from . import bubblegum_ultra  # noqa: F401
+from . import commander_keen_ultra  # noqa: F401
+
 __all__ = [
     "light",
     "dark",
@@ -25,4 +34,11 @@ __all__ = [
     "electric_lime",
     "bubblegum",
     "commander_keen",
+    "neon_ultra",
+    "retrowave_ultra",
+    "hacker_ultra",
+    "lava_ultra",
+    "electric_lime_ultra",
+    "bubblegum_ultra",
+    "commander_keen_ultra",
 ]
